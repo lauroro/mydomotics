@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Domotics Web App</title>
+  </head>
+  <body>
+    <h1>My Domotics</h1>
+
+    <div class="record-device">
+      <div id="form-row">
+        <button id="add-button"><h2>+</h2></button>
+      </div>
+
+      <div id="popup-container">
+        <div id="popup">
+          <button id="x-close"><b>X</b></button>
+
+          <h2><b>Add new device</b></h2>
+
+          <form action="server/actions.php" id="insert-form">
+            <div id="form-row">
+              <label for="name"><b>Name</b></label>
+              <input type="text" placeholder="Enter device's name" name="name" id="name" class="form-input" required>
+            </div>
+
+            <div id="form-row">
+              <label for="address"><b>Address</b></label>
+              <input type="text" placeholder="Enter device's ip address" name="address" id="address" class="form-input" required>
+            </div>
+
+            <button type="submit" id="submit"><b>Add</b></button>
+            <span id="insert-result"><span>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="devices-block">
+    
+    </div>
+  </body>
+  <script src="scripts/long-press-event.min.js"></script>
+  <script src="scripts/main.js"></script>
+</html>

@@ -1,0 +1,179 @@
+*{
+  margin: 0 auto;
+  position: relative;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  width:300px
+}
+
+h1{
+  padding-bottom: 20px;
+  font-size:250%;
+}
+
+
+
+.record-device{
+  width: 220px;
+}
+
+
+#add-button{
+  width: 110px;
+  height: 60px;
+  background-color: blue;
+  color:white;
+  border: transparent;
+  border-radius: 4px;
+}
+
+
+#popup-container{      
+  display : none;      
+  width: 100%;      
+  height: 200%;      
+  background: rgba(50,50,50,0.5);      
+  position: fixed;      
+  top: -100px; 
+  left: 0;
+  z-index: 1;      
+}    
+
+
+#popup{     
+  background : white;      
+  width : 350px;      
+  height : 300px;      
+  margin : 120px auto; 
+  border: 2px solid grey;
+  border-radius: 6px;
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+@keyframes fadeout{
+  from {top:0; opacity:1}
+  to {top:-300px; opacity:0}
+}
+
+#x-close{
+  width:50px;
+  height:50px;
+  background: transparent;
+  border: transparent;
+  position: relative;
+  left: 300px;
+  font-size: 115%
+}
+
+#popup h2{
+  padding-left: 90px;
+  padding-bottom: 8px;
+}
+
+
+div #form-row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px;
+}
+
+#form-row label{
+  padding-top: 8px;
+  position: relative;
+  left: -120px
+}
+
+#form-row input{
+  width:90%;
+  padding: 8px 2px;
+  border: 1px solid grey;
+  border-radius: 5px
+}
+
+#submit{
+  background-color:lightgreen;
+  color:black;
+  border-radius:4px;
+  height: 40px;
+  width: 100px;
+  border: 1px solid green;
+  position:relative;
+  left: 130px;
+  margin-top: 8px;
+}
+
+#insert-result{
+  left: 150px
+}
+
+
+
+#devices-block{
+  padding-top: 15px;
+  display:flex;
+  flex-direction:column;
+}
+
+
+#devices-block button{
+  margin-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width:230px;
+  background-color: lightblue;
+  font-size: large;
+  border: transparent;
+  border-radius: 5px;
+}
+
+@keyframes summon {
+  from {transform:scale(0); opacity: 0}
+  to {transform:scale(1); opacity: 1}
+}
+
+@keyframes unsummon{
+  from {transform:scale(1); opacity:1}
+  to {transform:scale(0); opacity:0}
+}
+
+#dev-row{
+  display:flex;
+  flex-direction: row;
+  width: 300px;
+  height: 100px
+}
+
+#clickable-area{
+  width:200%;
+  height:200%;
+  position: fixed; 
+  top:0;
+  left:0
+}
+
+
+#del-button{
+  width:50px !important;
+  height:50px !important;
+  background: transparent !important;
+  border: transparent;
+  font-weight: bold;
+  text-align:center;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(-1deg); }
+  100% { transform: rotate(+1deg); }
+}

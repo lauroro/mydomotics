@@ -136,7 +136,8 @@ div #form-row{
   padding-top: 10px;
   padding-bottom: 10px;
   width:230px;
-  height: 95px;
+  min-height: 95px;
+  height: fit-content;
   background-color: lightblue;
   font-size: large;
   border: transparent;
